@@ -1,0 +1,3 @@
+min eigenvalue of compressed W: -1.172e-15
+min eigenvalue of compressed F: -2.592e-15
+ALL CHECKS PASSED (numerical sanity check only)

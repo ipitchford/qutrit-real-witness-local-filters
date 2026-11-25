@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using these metadata."
+type: software
+title: "Two-qutrit entanglement invisible to real witnesses under every local filter"
+abstract: "Unrefereed research candidate. Both parts of Conjecture 9 of Shen, Chen and Bian (real entanglement witnesses after local unitaries, or after invertible local filters, detect every entangled state) are false: an explicit full-rank two-qutrit state with positive-definite partial transpose is detected by a complex witness, while every filtered real witness and every limit of such witnesses has expectation above 8.5e-10 on it, also on a ball of radius 8e-10. Part (i) fails for a qubit and a ququart, the smallest possible dimension. In every dimension the conjecture holds exactly when every exposed point of the normalised block-positive set is a limit of filtered real ones, and failures are robust. A degree-nine invariant classifies an exposed Ha-Kye family; one local ancilla qubit restores detection."
+authors:
+  - name: "Anonymous"
+version: "0.1.0-candidate"
+date-released: "2026-11-25"
+doi: "10.5281/zenodo.24540619"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24540619"
+    description: "This version"
+  - type: doi
+    value: "10.5281/zenodo.24540618"
+    description: "All versions (concept DOI)"
+repository-code: "https://github.com/ipitchford/qutrit-real-witness-local-filters"
+url: "https://evidencepress.org/releases/qutrit-real-witness-local-filters/"
+license: CC0-1.0
+keywords:
+  - entanglement witness
+  - real entanglement witnesses
+  - local filters
+  - SLOCC
+  - two qutrits
+preferred-citation:
+  type: article
+  title: "Two-qutrit entanglement invisible to real witnesses under every local filter"
+  authors:
+    - name: "Anonymous"
+  year: 2026
+  doi: "10.5281/zenodo.24540619"
+  publisher:
+    name: "Zenodo"
+  notes: "Version 0.1.0-candidate; unrefereed"

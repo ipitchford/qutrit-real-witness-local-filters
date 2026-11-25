@@ -1,0 +1,4 @@
+negative/positive epsilon assignments: 6666 4668
+nonzero monomial coefficients: 84
+exact P(W): 188339589 + 3582306 i
+antisymmetric factorization: PASS

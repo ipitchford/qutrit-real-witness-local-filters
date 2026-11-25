@@ -1,0 +1,21 @@
+Release replay environment (25 November 2026, macOS arm64 host)
+Interpreter (printed inside the run, not assumed): `uv run --no-project --python 3.12 --with sympy==1.14.0
+--with numpy==2.3.5 python3` resolved to CPython 3.12.11 with SymPy 1.14.0 and NumPy 2.3.5.
+Packages: requirements.txt (sympy==1.14.0, numpy==2.3.5). No compiler.
+Working directory: the package root. Flags: python3 -I -B -O (and -I -B without -O). PYTHONDONTWRITEBYTECODE=1,
+OPENBLAS_NUM_THREADS=1.
+Run time on the release host: under 5 s per program.
+GitHub CI: ubuntu-latest, actions/setup-python 3.12, pip install -r requirements.txt. One job: manifest, the five
+programs under -O and without -O, comparison with results/ under the declared policy, a negative control, working tree
+unchanged.
+Comparison policy (declared before tagging; the same in CI, README.md and REPLAY_RECEIPT.md):
+- verify_chirality, verify_qubit_ququart, independent_tensor_check: identical line by line (exact arithmetic);
+- verify_witness.txt: identical line by line except the two float display lines ("alpha:", "lower bound on filtered
+  real expectations:"), whose values agree within 1e-9 relative; every exact line, including the final
+  "ALL 120 CHECKS PASSED", identical;
+- results/verification_witness.json: every field identical except the float display fields tau_r, cubic_change_bound,
+  alpha, filtered_real_expectation_lower_bound, psd_margin and ppt_margin (1e-9 relative);
+- check_block_positivity.txt (floating-point sanity check, not a proof): text identical outside the numbers; each
+  printed minimum >= -1e-9; final line identical;
+- interpreter versions are not part of any output and are not compared.
+On the release platform every run (with and without -O) was byte-identical to the recorded outputs, the JSON included.

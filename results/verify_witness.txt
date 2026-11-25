@@ -1,0 +1,9 @@
+min eig(D), min eig(D^Gamma): 96/5 - 48*sqrt(3)/5 36 - 12*sqrt(185)/5
+Gram block sizes: [1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 8, 8, 8, 8, 8, 8, 15]
+Smallest Schur pivot: 6849698078814/29474774167205
+trace M(W,adj W)^3: 5007168700416 + 151720116387840*I
+Im tr L(H)^3: -84184191/193600
+alpha: 6.559271278816707e-06
+lower bound on filtered real expectations: 8.590870198343097e-10
+Witness expectation of the state: -8/19199997
+ALL 120 CHECKS PASSED

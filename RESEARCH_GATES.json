@@ -1,0 +1,266 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 25 November 2026 for 0.1.0-candidate from the dated searches of the internal AI-assisted review and the lead (24 November 2026), the source retrieval and reading record, the corpus overlap check, refs.bib, REVIEW_SUMMARY.md and the paper's own positioning (Sections 1 and 9). It records scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "Both parts of Shen-Chen-Bian Conjecture 9 fail for two qutrits: an explicit full-rank PPT entangled state detected by a complex witness, with every filtered real witness and every limit of such witnesses above 8.5e-10 on it; the same on a ball of radius 8e-10",
+   "unit": "statement",
+   "paperLocation": "Theorem 8; Sections 4 and 6",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv and general web searches up to 24 November 2026 (domain and editor roles of the internal review, and the lead); Semantic Scholar citations of Shen-Chen-Bian (two citing papers, by Shen, Chen et al., on local-unitary equivalence; neither addresses Conjecture 9); Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "real entanglement witnesses; Shen Chen Bian conjecture 9; real witness SLOCC local filter; imaginarity entanglement detection; exposed indecomposable witness two qutrits; Ha-Kye Choi type witness real representative; filtered real witness counterexample"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv PDFs for every arXiv-hosted source; PMC HTML for Wang et al.; Crossref records for every DOI)",
+     "query": "SCB Conjecture 9, Definition 1, Lemma 10(i)(ii), Theorems 8 and 11, Example 12, Section III; HK 2012 Theorem 2.2; HK 2013 Theorem 3.2, rho_0, pairing; HK 2016 Theorem 3.2 and map formula; Gurvits-Barnum Theorem 1; Horodecki 1996; Skowronek 2016; Wang et al. Example 2; Fraser et al. abstract"
+    }
+   ],
+   "closestPriorWork": "Shen-Chen-Bian (conjecture; Lemma 10, Theorem 11, Example 12); Ha-Kye 2012 and 2013 (the witness, its exposedness and the separable state); Skowronek 2016 (no finite family of maps with local filters suffices)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "no disproof found; the witness and separable state are Ha and Kye's, credited; Skowronek concerns finite families and does not settle the question"
+  },
+  {
+   "claim": "Conjecture 9(i) fails on C^2 x C^4, total dimension eight, the minimum; local unitaries and local filters differ in detection power",
+   "unit": "statement",
+   "paperLocation": "Theorem 10; Section 7",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv and general web searches up to 24 November 2026 (domain and editor roles of the internal review, and the lead); Semantic Scholar citations of Shen-Chen-Bian (two citing papers, by Shen, Chen et al., on local-unitary equivalence; neither addresses Conjecture 9); Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "real entanglement witnesses; Shen Chen Bian conjecture 9; real witness SLOCC local filter; imaginarity entanglement detection; exposed indecomposable witness two qutrits; Ha-Kye Choi type witness real representative; filtered real witness counterexample"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv PDFs for every arXiv-hosted source; PMC HTML for Wang et al.; Crossref records for every DOI)",
+     "query": "SCB Conjecture 9, Definition 1, Lemma 10(i)(ii), Theorems 8 and 11, Example 12, Section III; HK 2012 Theorem 2.2; HK 2013 Theorem 3.2, rho_0, pairing; HK 2016 Theorem 3.2 and map formula; Gurvits-Barnum Theorem 1; Horodecki 1996; Skowronek 2016; Wang et al. Example 2; Fraser et al. abstract"
+    }
+   ],
+   "closestPriorWork": "Ha-Kye 2016 (the map family); Horodecki 1996 (PPT = separable in 2x2 and 2x3); SCB Lemma 10(i)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "no prior 2x4 statement found"
+  },
+  {
+   "claim": "In every dimension, part (ii) [resp. (i)] holds iff every exposed (equivalently extreme) point of the trace-one block-positive set lies in the closure of filtered real [resp. locally unitary real] members; failures are robust",
+   "unit": "statement",
+   "paperLocation": "Theorem 6; Section 3",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv and general web searches up to 24 November 2026 (domain and editor roles of the internal review, and the lead); Semantic Scholar citations of Shen-Chen-Bian (two citing papers, by Shen, Chen et al., on local-unitary equivalence; neither addresses Conjecture 9); Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "real entanglement witnesses; Shen Chen Bian conjecture 9; real witness SLOCC local filter; imaginarity entanglement detection; exposed indecomposable witness two qutrits; Ha-Kye Choi type witness real representative; filtered real witness counterexample"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv PDFs for every arXiv-hosted source; PMC HTML for Wang et al.; Crossref records for every DOI)",
+     "query": "SCB Conjecture 9, Definition 1, Lemma 10(i)(ii), Theorems 8 and 11, Example 12, Section III; HK 2012 Theorem 2.2; HK 2013 Theorem 3.2, rho_0, pairing; HK 2016 Theorem 3.2 and map formula; Gurvits-Barnum Theorem 1; Horodecki 1996; Skowronek 2016; Wang et al. Example 2; Fraser et al. abstract"
+    }
+   ],
+   "closestPriorWork": "Ha-Kye 2013 remark that an exposed indecomposable witness detects an open set of PPT states (credited for the mechanism of Lemma 4); Straszewicz-type farthest-point argument (self-contained proof, not cited)",
+   "verdict": "partially-known-cited",
+   "verdictNote": "mechanism credited to Ha and Kye; the criterion itself was not found"
+  },
+  {
+   "claim": "A degree-nine conjugation-odd invariant decides which exposed Ha-Kye witnesses have filtered real representatives",
+   "unit": "statement",
+   "paperLocation": "Theorem 9; Section 5",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv and general web searches up to 24 November 2026 (domain and editor roles of the internal review, and the lead); Semantic Scholar citations of Shen-Chen-Bian (two citing papers, by Shen, Chen et al., on local-unitary equivalence; neither addresses Conjecture 9); Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "real entanglement witnesses; Shen Chen Bian conjecture 9; real witness SLOCC local filter; imaginarity entanglement detection; exposed indecomposable witness two qutrits; Ha-Kye Choi type witness real representative; filtered real witness counterexample"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv PDFs for every arXiv-hosted source; PMC HTML for Wang et al.; Crossref records for every DOI)",
+     "query": "SCB Conjecture 9, Definition 1, Lemma 10(i)(ii), Theorems 8 and 11, Example 12, Section III; HK 2012 Theorem 2.2; HK 2013 Theorem 3.2, rho_0, pairing; HK 2016 Theorem 3.2 and map formula; Gurvits-Barnum Theorem 1; Horodecki 1996; Skowronek 2016; Wang et al. Example 2; Fraser et al. abstract"
+    }
+   ],
+   "closestPriorWork": "Jarvis 2014 (local unitary invariants of mixed two-qutrit states; does not contain this invariant)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "no such classification found"
+  },
+  {
+   "claim": "One local ancilla qubit restores detection; a second copy can serve as that ancilla with local filters",
+   "unit": "statement",
+   "paperLocation": "Section 8, Proposition 11",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv and general web searches up to 24 November 2026 (domain and editor roles of the internal review, and the lead); Semantic Scholar citations of Shen-Chen-Bian (two citing papers, by Shen, Chen et al., on local-unitary equivalence; neither addresses Conjecture 9); Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "real entanglement witnesses; Shen Chen Bian conjecture 9; real witness SLOCC local filter; imaginarity entanglement detection; exposed indecomposable witness two qutrits; Ha-Kye Choi type witness real representative; filtered real witness counterexample"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv PDFs for every arXiv-hosted source; PMC HTML for Wang et al.; Crossref records for every DOI)",
+     "query": "SCB Conjecture 9, Definition 1, Lemma 10(i)(ii), Theorems 8 and 11, Example 12, Section III; HK 2012 Theorem 2.2; HK 2013 Theorem 3.2, rho_0, pairing; HK 2016 Theorem 3.2 and map formula; Gurvits-Barnum Theorem 1; Horodecki 1996; Skowronek 2016; Wang et al. Example 2; Fraser et al. abstract"
+    }
+   ],
+   "closestPriorWork": "McKague-Mosca-Gisin 2009 and Renou et al. 2021 (real representation with an extra qubit); Wang et al. 2025 (crossed-copy nonlinear tests); Fraser et al. 2026 (complete nonlinear invariants)",
+   "verdict": "partially-known-cited",
+   "verdictNote": "the realification is standard and credited; framed as an ancilla resource"
+  },
+  {
+   "claim": "Method: exposedness converts a witness outside the filtered real class into an open set of missed states; relative polynomial invariants that scale by a positive factor under local filters and vanish on real matrices separate a specific exposed witness from that class; exact finite certificate for the constants",
+   "unit": "method",
+   "paperLocation": "Sections 3-6",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv and general web searches up to 24 November 2026 (domain and editor roles of the internal review, and the lead); Semantic Scholar citations of Shen-Chen-Bian (two citing papers, by Shen, Chen et al., on local-unitary equivalence; neither addresses Conjecture 9); Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "real entanglement witnesses; Shen Chen Bian conjecture 9; real witness SLOCC local filter; imaginarity entanglement detection; exposed indecomposable witness two qutrits; Ha-Kye Choi type witness real representative; filtered real witness counterexample"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv PDFs for every arXiv-hosted source; PMC HTML for Wang et al.; Crossref records for every DOI)",
+     "query": "SCB Conjecture 9, Definition 1, Lemma 10(i)(ii), Theorems 8 and 11, Example 12, Section III; HK 2012 Theorem 2.2; HK 2013 Theorem 3.2, rho_0, pairing; HK 2016 Theorem 3.2 and map formula; Gurvits-Barnum Theorem 1; Horodecki 1996; Skowronek 2016; Wang et al. Example 2; Fraser et al. abstract"
+    }
+   ],
+   "closestPriorWork": "Ha-Kye 2013 (exposedness); Gurvits-Barnum 2002 (separable ball, used for compactness); classical invariant theory",
+   "verdict": "partially-known-cited",
+   "verdictNote": "standard tools credited; the combination and the invariants were not found in the searched sources"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Shen, Y., Chen, L. and Bian, Z. (2025), Phys. Rev. A 112, 022415 (arXiv:2408.08574)",
+   "usedFor": "Conjecture 9, Definition 1, Lemma 10, Theorems 8 and 11, Example 12",
+   "readWhat": "whole paper (arXiv version)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1103/py8r-jklj"
+  },
+  {
+   "citation": "Ha, K.-C. and Kye, S.-H. (2013), Open Syst. Inf. Dyn. 20, 1350012",
+   "usedFor": "exposedness (Theorem 3.2), separable state rho_0, pairing",
+   "readWhat": "whole paper (arXiv:1211.5675)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1142/S1230161213500121"
+  },
+  {
+   "citation": "Ha, K.-C. and Kye, S.-H. (2012), J. Phys. A 45, 415305",
+   "usedFor": "block positivity (Theorem 2.2), indecomposability",
+   "readWhat": "whole paper (arXiv:1205.2921)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1088/1751-8113/45/41/415305"
+  },
+  {
+   "citation": "Ha, K.-C. and Kye, S.-H. (2016), Linear Multilinear Algebra 64, 2188-2198",
+   "usedFor": "2x4 map formula and exposedness",
+   "readWhat": "whole paper (arXiv:1410.5545)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1080/03081087.2016.1145183"
+  },
+  {
+   "citation": "Gurvits, L. and Barnum, H. (2002), Phys. Rev. A 66, 062311",
+   "usedFor": "separable ball (Theorem 1)",
+   "readWhat": "whole paper (arXiv:quant-ph/0204159)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1103/PhysRevA.66.062311"
+  },
+  {
+   "citation": "Horodecki, M., Horodecki, P. and Horodecki, R. (1996), Phys. Lett. A 223, 1-8",
+   "usedFor": "witness characterisation; PPT = separable in 2x2 and 2x3",
+   "readWhat": "whole paper (arXiv:quant-ph/9605038)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1016/S0375-9601(96)00706-2"
+  },
+  {
+   "citation": "Skowronek, L. (2016), J. Math. Phys. 57, 112201",
+   "usedFor": "finite families of maps with local filters",
+   "readWhat": "whole paper (arXiv:1605.05254)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1063/1.4966984"
+  },
+  {
+   "citation": "Wang, Y., Zhang, T., Huang, X. and Fei, S.-M. (2025), iScience 28, 112174",
+   "usedFor": "crossed-copy Example 2",
+   "readWhat": "whole paper (PMC HTML)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1016/j.isci.2025.112174"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "The explicit state is extremely close to separable (ball radius 8e-10, noise threshold about 1.6e-7)",
+   "closingQuestion": "What is the largest noise tolerance among counterexamples?",
+   "triedOrSearched": "attempted in the revision round; sharper local estimates would be needed",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 9, open problem 3",
+   "whyNotClosedNow": "research-level; the qualitative and certified statements do not depend on it"
+  },
+  {
+   "limitation": "Part (ii) on C^2 x C^4 not settled",
+   "closingQuestion": "Is there an exposed 2x4 witness outside the filtered real closure?",
+   "triedOrSearched": "attempted in the revision round; no candidate family found",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 9, open problem 1",
+   "whyNotClosedNow": "research-level"
+  },
+  {
+   "limitation": "Block positivity of W rests on the cited Ha-Kye theorem with a floating-point cross-check, not an exact sum-of-squares certificate",
+   "closingQuestion": "Are the hypotheses of Ha-Kye 2012 Theorem 2.2 met?",
+   "triedOrSearched": "conditions checked exactly in verify_witness.py (they hold with equality); float scan in check_block_positivity.py",
+   "estimatedCost": "hours",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Source bundle checks used bare assert and did not cover every constant",
+   "closingQuestion": "Do the programs check every certified constant and fail under python -O?",
+   "triedOrSearched": "verify_witness.py rewritten (120 explicit checks); negative control exits 1 under -O",
+   "estimatedCost": "hours",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Embedded counterexamples in larger dimensions",
+   "closingQuestion": "For which (m,n) with 3 <= m,n <= 5 does an embedded two-qutrit counterexample remain undetected?",
+   "triedOrSearched": "dimension >= 6 settled by the Section 9 remark",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 9, open problem 2",
+   "whyNotClosedNow": "research-level"
+  },
+  {
+   "limitation": "Novelty rests on searches of limited scope",
+   "closingQuestion": "Would further indexes change attribution?",
+   "triedOrSearched": "arXiv, web and Semantic Scholar citation searches; cited sources read; Evidence Press corpus checked; Semantic Scholar keyword search was rate-limited",
+   "estimatedCost": "subscription indexes",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "subscription indexes were outside the searched corpus",
+   "whyNotClosedNow": "recorded here; the paper positions its results against the sources read"
+  }
+ ],
+ "extensionScout": {
+  "by": "the internal review panel, the re-reviewer and the lead",
+  "date": "2026-11-24",
+  "proposals": [
+   "a criterion in every dimension",
+   "promote the 2x4 local-unitary failure to a theorem",
+   "dimension-specificity of failures",
+   "part (ii) on 2x4",
+   "a large-margin counterexample",
+   "an exact sum-of-squares certificate of block positivity"
+  ],
+  "actions": [
+   "done: Theorem 6",
+   "done: Theorem 10",
+   "done: Section 9 remark",
+   "not done: no candidate family; open problem 1",
+   "not done: open problem 3",
+   "rejected: the cited Ha-Kye theorem suffices; conditions checked exactly"
+  ]
+ }
+}

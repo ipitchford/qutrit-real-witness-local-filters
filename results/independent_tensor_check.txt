@@ -1,0 +1,6 @@
+Exact invariant: (188339589, 3582306)
+Polynomial identity on all 715 interpolation points modulo 101
+Polynomial identity on all 715 interpolation points modulo 241
+Polynomial identity on all 715 interpolation points modulo 1009
+Polynomial identity on all 715 interpolation points modulo 1013
+Integer polynomial identity: PASS

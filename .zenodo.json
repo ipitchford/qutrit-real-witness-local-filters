@@ -1,0 +1,111 @@
+{
+ "title": "Two-qutrit entanglement invisible to real witnesses under every local filter",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "description": "<p><strong>Unrefereed research candidate.</strong> To show that two quantum systems are entangled, experimenters measure an entanglement witness: an observable whose expectation is nonnegative on every separable state and negative on some entangled state. Written as a matrix in a product basis, a witness generally has complex entries. Shen, Chen and Bian (Physical Review A, 2025, Conjecture 9) conjectured that real-matrix witnesses lose nothing, provided each laboratory may first change its local basis (part (i), local unitaries) or apply an invertible local filter (part (ii), SLOCC). They proved part (i) for states whose partial transpose has a negative eigenvalue and some two-qutrit cases; the conjecture holds automatically in total dimension below eight.</p><p><strong>Results.</strong> (1) Both parts are false: an explicit full-rank two-qutrit state with positive-definite partial transpose is detected by a complex witness, while every real witness after any invertible local filters, and every limit of such witnesses, has expectation above 8.5&times;10<sup>&minus;10</sup> on it; the same holds on a ball of Frobenius radius 8&times;10<sup>&minus;10</sup>. (2) Part (i) already fails for a qubit and a ququart (2&times;4, total dimension eight, the smallest possible); there filtered real witnesses detect states that locally rotated real witnesses miss. Whether part (ii) fails for 2&times;4 is open. (3) In every dimension, part (ii) holds exactly when every exposed point of the set of trace-one block-positive operators is a limit of filtered real ones (likewise part (i) with local unitaries); every failure is robust, on an open set of full-rank states. (4) A degree-nine polynomial invariant decides which members of an exposed family of witnesses of Ha and Kye have filtered real representatives. (5) One local ancilla qubit restores detection, and a second copy of the state can serve as that ancilla when invertible filters are allowed.</p><p><strong>Method.</strong> An exposed witness that is not a limit of filtered real witnesses yields, by nudging the separable state it touches towards entanglement, states it detects and every filtered real witness misses. A polynomial in the matrix entries that changes only by a positive factor under local filters and is real for real matrices has non-zero imaginary part for the chosen Ha&ndash;Kye witness. The witness and the separable state are due to Ha and Kye.</p><p><strong>Limits.</strong> The explicit state is extremely close to separable (certified ball radius 8&times;10<sup>&minus;10</sup>, noise threshold about 1.6&times;10<sup>&minus;7</sup>), so this is a mathematical statement about which observables suffice, not an experimental proposal. Experiments can still detect such states with several real measurements and classical post-processing.</p><p><strong>Contents.</strong> The paper (LaTeX source and PDF), the exact state and witness (state.json), five Python verification programs (SymPy, NumPy and the standard library) with their recorded outputs, plus the bibliography, a machine-readable index, a research-gate record, a review summary, a replay receipt and SHA-256 sums. Every certifying check is exact; one floating-point cross-check of the cited block-positivity theorems is included and is not part of any proof. Every check exits with an error on failure, also under python -O.</p><p><strong>Assurance.</strong> Written proofs with exact computer checks. Internal AI-assisted review only: a combined five-role Claude review panel, the lead's proof audit and clean replay, one revision round with extensions, a verification re-review and a proof audit of the new and rewritten proofs, and a clean release replay with a negative control. No Astra/Codex review took place. This is not peer review, independent reproduction or formal verification. Creator: Anonymous. Text CC0-1.0; code MIT.</p>",
+ "creators": [
+  {
+   "name": "Anonymous"
+  }
+ ],
+ "access_right": "open",
+ "license": "cc-zero",
+ "version": "0.1.0-candidate",
+ "publication_date": "2026-11-25",
+ "keywords": [
+  "entanglement witness",
+  "real entanglement witnesses",
+  "local filters",
+  "SLOCC",
+  "local unitary equivalence",
+  "two qutrits",
+  "positive partial transpose",
+  "block-positive operators",
+  "exposed witnesses",
+  "Shen-Chen-Bian conjecture",
+  "Ha-Kye witnesses"
+ ],
+ "notes": "Code (*.py and the CI workflow) is MIT; prose, manuscript, state file, recorded outputs and records are CC0-1.0.",
+ "related_identifiers": [
+  {
+   "identifier": "https://github.com/ipitchford/qutrit-real-witness-local-filters/tree/v0.1.0-candidate",
+   "relation": "isSupplementTo",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://evidencepress.org/releases/qutrit-real-witness-local-filters/",
+   "relation": "isDocumentedBy",
+   "scheme": "url"
+  },
+  {
+   "identifier": "10.1103/py8r-jklj",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1142/s1230161213500121",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1088/1751-8113/45/41/415305",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1080/03081087.2016.1145183",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1103/physreva.66.062311",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1016/s0375-9601(96)00706-2",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1016/j.physrep.2009.02.004",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1088/1751-8113/47/21/215302",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1063/1.4966984",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1038/s41586-021-04160-4",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1103/physrevlett.102.020505",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1088/1751-8121/aabe9c",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1016/j.isci.2025.112174",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "arXiv:2606.16712",
+   "relation": "references",
+   "scheme": "arxiv"
+  }
+ ]
+}

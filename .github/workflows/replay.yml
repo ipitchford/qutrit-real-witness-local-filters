@@ -1,0 +1,52 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  OPENBLAS_NUM_THREADS: "1"
+jobs:
+  quick:
+    name: Manifest; five programs under python -O and without -O; comparison under the declared policy; negative control
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check MANIFEST.sha256
+        run: sha256sum -c MANIFEST.sha256
+      - name: Install pinned packages
+        run: python3 -m pip install --disable-pip-version-check -r requirements.txt
+      - name: Run the five programs in copies of the package (cwd = package root)
+        run: |
+          python3 -I -c 'import sys, sympy, numpy; print(sys.version, sympy.__version__, numpy.__version__)'
+          for d in run runO neg1; do mkdir -p "$RUNNER_TEMP/$d/out"; cp -R code results state.json "$RUNNER_TEMP/$d/"; done
+          for mode in runO run; do
+            cd "$RUNNER_TEMP/$mode"
+            if [ "$mode" = runO ]; then F=-O; else F=; fi
+            python3 -I -B $F code/verify_witness.py --output out/verification_witness.json > out/verify_witness.txt
+            for s in verify_chirality verify_qubit_ququart independent_tensor_check check_block_positivity; do
+              python3 -I -B $F code/$s.py > out/$s.txt
+            done
+          done
+      - name: Compare with the recorded outputs
+        # Declared policy (also in README.md, ENVIRONMENT.txt and REPLAY_RECEIPT.md): exact outputs identical; in
+        # verify_witness.txt and verification_witness.json only the float display values may differ, within 1e-9
+        # relative; check_block_positivity minima >= -1e-9 with identical text; interpreter versions not compared.
+        run: |
+          python3 -I .github/ci/compare_output.py "$RUNNER_TEMP/runO/out" results
+          python3 -I .github/ci/compare_output.py "$RUNNER_TEMP/run/out" results
+      - name: Negative control under -O (epsilon changed from 1/160000 to 1/100000 in verify_witness.py)
+        run: |
+          cd "$RUNNER_TEMP/neg1"
+          sed -i 's/eps = Rational(1, 160000)/eps = Rational(1, 100000)/' code/verify_witness.py
+          grep -q 'eps = Rational(1, 100000)' code/verify_witness.py
+          if python3 -I -B -O code/verify_witness.py > out.txt 2>&1; then echo "wrong value not detected"; exit 1; fi
+          grep -q 'FAILED: alpha > 6.5592e-6 > epsilon' out.txt
+          echo "negative control detected"
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"
